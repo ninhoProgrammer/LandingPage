@@ -7,15 +7,14 @@ interface Props {
 
 const { href, title, img } = Astro.props;
 ---
-
 <div class="relative flex flex-col z-10 max-w-72 px-3 py-3 bg-red-600 backdrop-blur-md shadow-lg rounded-[30px] bg-gradient-to-b from-white/10 to-white/0" >
     <div class="flex -mt-8 gap-2 ">
-        <img class="md:rounded-[30px] shadow-lg md:h-52 xl:h-80" src={img} alt="Side Image" />
+        <img class="md:rounded-[30px] shadow-lg md:h-52 xl:h-72" src={img} alt="Side Image" />
     </div>
     <h2 class="text-2xl mt-5 font-bold text-white">
         {title}
     </h2>
-    <div class="grid grid-cols-2 items-center gap-2 mt-2 ">
+    <div class="grid grid-cols-2 items-center gap-2 mt-2">
         <div class="flex flex-row gap-2 justify-start items-center">
             <img class="md:rounded-[30px] shadow-lg md:h-10 md:w-10" src={img} alt="Side Image" />
             <h2 class="text-xl text-white">
@@ -24,10 +23,10 @@ const { href, title, img } = Astro.props;
             </h2>
             
         </div>
-        <div class="flex gap-2 justify-end items-center">
-            <button class="bg-gray-600 bg-opacity-90 w-14 justify-items-end text-white rounded-lg p-4 hover:-translate-y-1 hover:delay-150 hover:scale-110 hover:bg-[#6d2b25]">
+        <div class="flex gap-2 text-center justify-end items-center">
+            <a href="#" class="bg-gray-600 bg-opacity-90 w-14 justify-items-end text-white rounded-lg p-4 hover:-translate-y-1 hover:delay-150 hover:scale-110 hover:bg-[#6d2b25]">
                 +
-            </button>
+            </a>
         </div>
     </div>
 </div>

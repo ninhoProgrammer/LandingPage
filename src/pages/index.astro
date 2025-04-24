@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 import Extra from '../components/Extra.astro';
 import Layout from '../layouts/Layout.astro';
 import Banner from '../components/Banner.astro';
-
+import Products from '../components/Products.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -22,6 +22,10 @@ import Banner from '../components/Banner.astro';
 
 	<section id="section" class="section bg-[url('../abstract_invert.webp')] bg-cover bg-center bg-no-repeat h-screen w-screen flex items-center justify-center text-shadow-gray-700 z-1">
 		<Section />
+	</section>
+
+	<section id="section" class="section h-screen w-screen flex items-center justify-center text-shadow-gray-700 z-1">
+		<Products />
 	</section>
 
 	<section id="banner" class="section md:w-screen z-1">
