@@ -1,11 +1,44 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Section from '../components/Section.astro';
+import Footer from '../components/Footer.astro';
+import Extra from '../components/Extra.astro';
 import Layout from '../layouts/Layout.astro';
+import Banner from '../components/Banner.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<section id="hero" class="section bg-[url('../abstract.webp')] bg-cover bg-center bg-no-repeat h-screen w-screen items-center justify-center flex text-shadow-gray-700 z-1 ">
+		<Hero />
+	</section>
+
+	<section id="about" class="section bg-red-600 md:h-screen md:w-screen flex text-white z-1">
+		<About />
+	</section>
+
+	<section id="section" class="section bg-[url('../abstract_invert.webp')] bg-cover bg-center bg-no-repeat h-screen w-screen flex items-center justify-center text-shadow-gray-700 z-1">
+		<Section />
+	</section>
+
+	<section id="banner" class="section md:w-screen z-1">
+		<Banner />
+	</section>
+
+	<section id="extra" class="section md:h-screen md:w-screen bg-[url('../background.svg')] flex z-1">
+		<Extra />
+	</section>
+	
+	<section id="footer" class="section  bg-red-600 z-1">
+		<Footer />
+	</section>
+	
+	<button 
+		onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 
+		class="fixed bottom-4 right-4 bg-red-600 text-white px-4 py-2 rounded-t-2xl shadow-lg hover:bg-red-700 transition">
+		↑
+	</button>
 </Layout>
