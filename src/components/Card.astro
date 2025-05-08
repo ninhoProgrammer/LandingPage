@@ -7,7 +7,7 @@ interface Props {
 
 const { href, title, img } = Astro.props;
 ---
-<article  class="snap-start relative flex flex-col  max-w-76 gap-2 md:gap-4 px-3 py-3 bg-red-600 backdrop-blur-md rounded-[20px] md:rounded-[30px] bg-gradient-to-b from-white/60 to-white/0" >
+<article  class="snap-start relative flex flex-col  max-w-76 gap-2 md:gap-4 px-3 py-3 bg-[var(--color-primary)] backdrop-blur-md rounded-[20px] md:rounded-[30px] bg-gradient-to-b from-white/60 to-white/0" >
     <div class="flex -mt-8 gap-2 justify-center ">
         <img class="rounded-[20px] md:rounded-[30px] shadow-4xl h-56 xl:h-72 w-72" src={img} alt="Side Image" />
     </div>
@@ -22,7 +22,7 @@ const { href, title, img } = Astro.props;
             </h2>
         </div>
         <div class="flex flex-wrap justify-end items-center">
-            <a href="#" class="bg-gray-600 bg-opacity-90 justify-items-center text-white rounded-lg p-2 hover:-translate-y-1 hover:delay-150 hover:scale-110 hover:bg-[#6d2b25]">
+            <a href="#" class="bg-[var(--color-secundary)] bg-opacity-90 justify-items-center text-white rounded-lg p-2 hover:-translate-y-1 hover:delay-150 hover:scale-110 hover:bg-[#6d2b25]">
                 View
                 <span>&rarr;</span>
             </a>

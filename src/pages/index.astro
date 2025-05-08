@@ -12,19 +12,19 @@ import Products from '../components/Products.astro';
 ---
 
 <Layout>
-	<section id="hero" class="section bg-[url('../abstract.webp')] bg-cover bg-center bg-no-repeat h-screen w-screen items-center justify-center flex text-shadow-gray-700 z-1 ">
+	<section id="hero" class="section bg-[url('../abstract.webp')] bg-cover bg-center bg-no-repeat h-screen w-screen items-center justify-center flex text-[var(--color-secundary)] z-1 ">
 		<Hero />
 	</section>
 
-	<section id="about" class="section bg-red-600 md:h-screen md:w-screen flex text-white z-1">
+	<section id="about" class="section bg-[var(--color-primary)] md:h-screen md:w-screen flex text-white z-1">
 		<About />
 	</section>
 
-	<section id="section" class="section bg-[url('../abstract_invert.webp')] bg-cover bg-center bg-no-repeat h-screen w-screen flex items-center justify-center text-shadow-gray-700 z-1">
+	<section id="section" class="section bg-[url('../abstract_invert.webp')] bg-cover bg-center bg-no-repeat h-screen w-screen flex items-center justify-center text-[var(--color-secundary)] z-1">
 		<Section />
 	</section>
 
-	<section id="section" class="section md:h-screen md:w-screen flex items-center justify-center text-shadow-gray-700 z-1">
+	<section id="section" class="section md:h-screen md:w-screen flex items-center justify-center text-[var(--color-secundary)] z-1">
 		<Products />
 	</section>
 
@@ -36,13 +36,13 @@ import Products from '../components/Products.astro';
 		<Extra />
 	</section>
 	
-	<section id="footer" class="section  bg-red-600 z-1">
+	<section id="footer" class="section  bg-[var(--color-primary)] z-1">
 		<Footer />
 	</section>
 	
 	<button 
 		onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" 
-		class="fixed bottom-4 right-4 bg-red-600 text-white px-4 py-2 rounded-t-2xl shadow-lg hover:bg-red-700 transition">
+		class="fixed bottom-4 right-4 bg-[var(--color-primary)] text-white px-4 py-2 rounded-t-2xl shadow-lg hover:bg-red-700 transition">
 		↑
 	</button>
 </Layout>
